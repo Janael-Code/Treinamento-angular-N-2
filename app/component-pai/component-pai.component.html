@@ -1,0 +1,6 @@
+
+<h2>Interagindo entre componentes </h2>
+<h3>sobre nome do pai: {{sobrenome}}</h3>
+<h3>O nome completo é: {{ filho.nome }} {{sobrenome}}</h3>
+
+<app-component-filho [sobrenome]="sobrenome" (mostrarNome)="mostrarNomeCompleto($event)" #filho></app-component-filho>
